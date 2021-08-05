@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+
+  <!-- Google Fonts -->
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+ 
+
+
+  <!-- Template Main CSS File -->
+  
+<style>
+
+.menu{
+font-size:30px;
+cursor:pointer;
+background-color:transparent;
+margin-top:0px;
+text-align:center;
+position:absolute;
+z-index: 1;
+width:100%;
+color:white;
+padding-right:6%;
+padding:2%;
+
+}
+.logo{
+max-width: 400px;
+height:auto;
+text-align:center;
+position:relative;
+
+margin-top:-2%;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  
+  }
+}
+
+body {
+  background: #ffffff;
+  color: #898989;
+  font-family: 'Poppins', helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h2 {
+  color: #292929;
+  font-weight: 600;
+}
+
+h4 {
+  color: #292929;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a {
+  color: #292929;
+  text-decoration: none !important;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+a:hover {
+  transition: all 0.5s ease-in-out 0s;
+}
+
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+#hero-left  {
+	margin-top:0px;
+  overflow:hidden;
+  height: 100vh;
+  width: 50%;
+  float:left;
+ 
+  margin-left:0px;
+}
+#hero-right{
+	margin-top:0px;
+  overflow:hidden;
+  height: 100vh;
+  width: 50%;
+  float:right;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #hero-left{
+    width: 100%;
+    
+  }
+   #hero-right{
+    width: 100%;
+  }
+}
+#hero .hero-content {
+  height: 100vh;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hero-content .list-social li {
+  float: left;
+  margin-right: 20px;
+}
+
+.hero-content .list-social li i {
+  color: #fff;
+  font-size: 15px;
+}
+
+
+  /* Single page */
+  .entry-comments-body span {
+    display: inline-block;
+    margin-right: 0;
+  }
+}
+
+</style>
+</head>
+
+<body >
+
+  <!-- ======= Header ======= -->
+
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+  </span>&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<div>  
+
+  <span class="menu" style="" >YOUR LOGO<a style="float:right;" onclick="openNav()">&#9776;</a></span>
+  
+  
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+ <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero-left" class="home">
+	<div class="container" style = "padding-right:0px;padding-left:0px;">
+      <div class="hero-content">
+        <div class = "videos">
+       <video id = "video" width="100%" height="100%" style=""  muted="muted" loop>
+        <source src="video2.mp4" type="video/mp4" />
+        </video>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div id="hero-right" class="home">
+
+    <div class="container" style = "padding-right:0px;padding-left:0px;">
+      <div class="hero-content">
+      <div class = "videos">
+       <video id = "videoTwo" width="100%" height="100%" style=""  muted="muted" loop>
+        <source src="video.mp4" type="video/mp4" />
+        </video>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End Hero -->
+</div>
+<script>
+var figure = $(".videos");
+var vid = figure.find("video");
+
+[].forEach.call(figure, function (item,index) {
+
+    item.addEventListener('mouseover', hoverVideo.bind(item,index), false);
+    item.addEventListener('mouseout', hideVideo.bind(item,index), false);
+});
+
+function hoverVideo(index, e) {
+    vid[index].play(); 
+}
+
+function hideVideo(index, e) {
+    vid[index].pause(); 
+}
+
+//var video = document.getElementById('video');
+
+var v = document.getElementById('video');
+v.addEventListener(
+    'play', 
+    function() { 
+    	if(window.innerWidth<=768)
+        	v.play();
+    }, 
+    false);
+
+v.onclick = function() {
+	if(window.innerWidth<=768){
+	    if (v.paused) {
+	        v.play();
+	    } else {
+	        v.pause();
+	    }
+	
+	    return false;
+	}
+};
+var vt = document.getElementById('videoTwo');
+vt.addEventListener(
+    'play', 
+    function() { 
+    	if(window.innerWidth<=768)
+        vt.play();
+    }, 
+    false);
+
+vt.onclick = function() {
+	if(window.innerWidth<=768){
+	    if (vt.paused) {
+	        vt.play();
+	    } else {
+	        vt.pause();
+	    }
+	
+	    return false;
+	}
+};
+</script>
+
+
+</body>
+
+</html>
